@@ -21,7 +21,17 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers = mixedNumbers.filter(myFunction);
+function myFunction (arr) {
+  let evenNumArr = [];
+  for (let key in arr) {
+    if (arr[key] % 2 === 0) {
+        evenNumArr.push(arr[key])
+    }
+  }
+  return evenNumArr;
+}
+console.log(evenNumbers)
 
 
 
